@@ -3,28 +3,33 @@ const mongoose = require('mongoose');
 // importar el modelo de usuario
 const User = require('./models/User');
 
-// la URI de la db
-const db = 'mongodb://localhost/hellodb';
-
+const db = 'mongodb+srv://hellodb:hellodb@cluster0.dfily.mongodb.net/hellod?bretryWrites=true&w=majority';
+// const db = 'mongodb://localhost/hellodb';
 // array de usuarios para ingresar a la db
 const users = [
   {
     id: 1,
-    name: 'Leon',
-    : 'Resident Evil Franchise',
-    Lanzamiento: '2004'
-  }
+    name: 'Juan',
+    mail: 'juan@mail.com',
+    birthday: '2000-05-24'
+  },
   {
     id: 2,
-    name: 'Nathan drake',
-    Juego: 'Uncharted Franchise',
-    Lanzamiento: '2005'
-  }
+    name: 'Maria',
+    mail: 'maria@mail.com',
+    birthday: '2000-02-13'
+  },
   {
     id: 3,
-    name: 'Joel',
-    Juego: 'TLOU',
-    Lanzamiento: '2013'
+    name: 'Pedro',
+    mail: 'pedro@mail.com',
+    birthday: '2000-05-19'
+  },
+  {
+    id: 4,
+    name: 'Julia',
+    mail: 'julia@mail.com',
+    birthday: '1998-03-01'
   }
 ];
 
