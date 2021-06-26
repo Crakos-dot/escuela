@@ -7,8 +7,9 @@ const db   = process.env.MONGODB_URI || 'mongodb://localhost/hellodb';
 
 const app = express();
 const cors     = require('cors');
+app.use(cors());
 
-const app = express()
+
 // conexion a la base de datos
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useFindAndModify', false);
@@ -23,4 +24,3 @@ app.use('/api', router);
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
-app.use(cors());
